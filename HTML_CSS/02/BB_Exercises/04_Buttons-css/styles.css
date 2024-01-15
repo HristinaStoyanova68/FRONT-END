@@ -42,7 +42,6 @@ div>button {
 .filled>.hover:hover,
 .icons>.hover:hover {
     background-color: rgb(0, 102, 0);
-    /* border-color: rgb(0, 102, 0); */
     color: white;
 }
 
