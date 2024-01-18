@@ -17,6 +17,7 @@ div>button {
     border-radius: 1.5em;
     cursor: pointer;
     padding: 0.5em 0.8em;
+    outline: none;
 }
 
 .fa-arrow-down {
