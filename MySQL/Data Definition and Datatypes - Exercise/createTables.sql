@@ -47,3 +47,8 @@ VALUES (1, 'Kevin', 22, 1),
 
 TRUNCATE TABLE minions;
 
+-- 5
+
+DROP TABLE minions;
+DROP TABLE towns;
+
