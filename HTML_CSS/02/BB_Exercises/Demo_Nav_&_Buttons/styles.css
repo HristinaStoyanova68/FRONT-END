@@ -1,0 +1,89 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: 14px/1.5 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+}
+
+body, table {
+    font: inherit;
+}
+
+body {
+    padding: 4em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #eee;
+    border: 2px solid #ccc;
+    padding: 2em;
+    width: 150px;
+    margin-bottom: 3em;
+}
+
+nav li {
+    display: block;
+    list-style: none;
+}
+
+nav a {
+    color: #369;
+}
+
+nav a [class*="fa-"] {
+    color: black;
+}
+
+/* Button Styles */
+
+.button {
+    display: inline-block;
+    line-height: 1;
+    padding: 0.6em 1em;
+    /* border: 2px solid rgba(255, 255, 255, 0.5); */
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: #69A;
+    color: white;
+}
+
+.button:hover {
+    background-color: #359d8a;
+}
+
+.button.button-delete {
+    background-color: red;
+}
+
+.button.button-delete:hover {
+    background-color: yellow;
+}
+
+ol.todo {
+    margin-top: 3em;
+}
+
+ol.todo li {
+    display: block;
+    list-style: none outside;
+}
+
+ol.todo li::before {
+    display: inline-block;
+    content: '\f10c';
+    font-family: "Font Awesome 6 Free";
+    margin-right: 1em;
+    opacity: 0.5;
+}
+
+ol.todo li.done::before {
+    content: '\f14a';
+
+}
