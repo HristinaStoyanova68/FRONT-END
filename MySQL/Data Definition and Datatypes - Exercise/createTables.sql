@@ -52,3 +52,25 @@ TRUNCATE TABLE minions;
 DROP TABLE minions;
 DROP TABLE towns;
 
+-- 6
+
+CREATE TABLE people(
+	id INT NOT NULL UNIQUE AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(200) NOT NULL,
+	picture BLOB,
+    height DOUBLE(6, 2),
+    weight DOUBLE(6, 2),
+    gender CHAR(1) NOT NULL,
+    birthdate DATE NOT NULL,
+    biography BLOB
+);
+
+INSERT INTO people(id, name, picture, height, weight, gender, birthdate, biography) 
+VALUES (1, 'Ivan', 'test', 1.89, 95.5, 'm', '1976-05-01', 'test'), 
+(2, 'Peter', 'test', 1.89, 95.5, 'm', '1976-05-02', 'test'),
+(3, 'Georgi', 'test', 1.89, 95.5, 'm', '1976-05-03', 'test'),
+(4, 'Maya', 'test', 1.89, 95.5, 'f', '1976-05-04', 'test'),
+(5, 'Nana', 'test', 1.89, 95.5, 'f', '1976-05-05', 'test');
+
+
+
