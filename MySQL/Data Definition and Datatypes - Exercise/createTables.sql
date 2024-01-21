@@ -72,5 +72,23 @@ VALUES (1, 'Ivan', 'test', 1.89, 95.5, 'm', '1976-05-01', 'test'),
 (4, 'Maya', 'test', 1.89, 95.5, 'f', '1976-05-04', 'test'),
 (5, 'Nana', 'test', 1.89, 95.5, 'f', '1976-05-05', 'test');
 
+-- 7
+
+CREATE TABLE users (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    password VARCHAR(26) NOT NULL,
+    profile_picture BLOB,
+    last_login_time DATETIME,
+    is_deleted BOOLEAN
+);
+
+INSERT INTO users (id, username, password, profile_picture, last_login_time, is_deleted) 
+VALUES (1, 'Ivan', '123456', 'test', '1976-05-01', true),
+(2, 'Peter', '123456','test', '1976-05-02', true),
+(3, 'Georgi', '123456','test', '1976-05-03', true),
+(4, 'Maya', '123456','test', '1976-05-04', true),
+(5, 'Nana', '123456','test', '1976-05-05', true);
+
 
 
