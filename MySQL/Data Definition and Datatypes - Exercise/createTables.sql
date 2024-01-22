@@ -348,6 +348,12 @@ UPDATE employees
 SET first_name = 'Petar'
 WHERE id = 2;
 
+-- 14
+
+SELECT * FROM towns;
+SELECT * FROM departments;
+SELECT * FROM employees;
+
 
 
 
