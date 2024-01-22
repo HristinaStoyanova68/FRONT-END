@@ -249,6 +249,32 @@ INSERT INTO employees(first_name, last_name, title, notes) VALUES
  (124, 'Stoyanov Georgi', 'Dobrich2', 'Dobrich', '9300', 'test'),
  (125, 'Stoyanova Mama', 'Dobrich1', 'Dobrich', '9300', 'test');
 
+ -- rental_orders (id, employee_id, customer_id, car_id, car_condition, tank_level, kilometrage_start, kilometrage_end, total_kilometrage, start_date, end_date, total_days, rate_applied, tax_rate, order_status, notes)
+ 
+ CREATE TABLE rental_orders(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    employee_id INT NOT NULL, 
+    customer_id INT NOT NULL, 
+    car_id INT NOT NULL, 
+    car_condition VARCHAR(80) NOT NULL, 
+    tank_level INT, 
+    kilometrage_start INT, 
+    kilometrage_end INT , 
+    total_kilometrage INT, 
+    start_date DATE, 
+    end_date DATE, 
+    total_days INT, 
+    rate_applied DOUBLE(6, 2), 
+    tax_rate DOUBLE(6, 2), 
+    order_status BOOLEAN, 
+    notes TEXT
+ );
+ 
+ INSERT INTO rental_orders (employee_id, customer_id, car_id, car_condition, tank_level, kilometrage_start, kilometrage_end, total_kilometrage, start_date, end_date, total_days, rate_applied, tax_rate, order_status, notes) VALUES
+ (1, 1, 1, 'GOOD', 100, 1111, 2222, 3333, '2022-05-05','2022-05-06', 1, 1.2, 2.2, true, 'test'),
+ (2, 2, 2, 'GOOD', 100, 1111, 2222, 3333, '2022-05-05','2022-05-06', 1, 1.2, 2.2, true, 'test'),
+ (3, 3, 3, 'GOOD', 100, 1111, 2222, 3333, '2022-05-05','2022-05-06', 1, 1.2, 2.2, true, 'test');
+
 
 
 
