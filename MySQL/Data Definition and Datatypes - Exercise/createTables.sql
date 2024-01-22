@@ -216,8 +216,38 @@ INSERT INTO cars(plate_number, make, model, car_year, category_id, doors, pictur
 ('TX2021AX', 'Lada', '325', '1999-05-06', 1, 3, 'BEST', 'GOOD', false),
 ('TX2022AX', 'Audi', '3', '1999-05-07', 1, 3, 'BEST', 'GOOD', true);
 
+-- employees (id, first_name, last_name, title, notes)
+
+CREATE TABLE employees(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+first_name VARCHAR(80) NOT NULL, 
+last_name VARCHAR(80) NOT NULL, 
+title VARCHAR(80) NOT NULL, 
+notes TEXT
+);
+
+INSERT INTO employees(first_name, last_name, title, notes) VALUES
+ ('Ivan', 'Ivanov', 'Mr', 'test'),
+ ('Ivanka', 'Ivanova', 'Mrs', 'test'),
+ ('Ivana', 'Ivanov', 'Mrs', 'test');
 
 
+ -- customers (id, driver_licence_number, full_name, address, city, zip_code, notes)
+ 
+ CREATE TABLE customers(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    driver_licence_number INT NOT NULL UNIQUE, 
+    full_name VARCHAR(80) NOT NULL, 
+    address VARCHAR(80) NOT NULL, 
+    city VARCHAR(80) NOT NULL, 
+    zip_code VARCHAR(80) NOT NULL, 
+    notes TEXT
+ );
+ 
+ INSERT INTO customers(driver_licence_number, full_name, address, city, zip_code, notes) VALUES
+ (123, 'Stoyanova Hristina', 'Dobrich1', 'Dobrich', '9300', 'test'),
+ (124, 'Stoyanov Georgi', 'Dobrich2', 'Dobrich', '9300', 'test'),
+ (125, 'Stoyanova Mama', 'Dobrich1', 'Dobrich', '9300', 'test');
 
 
 
