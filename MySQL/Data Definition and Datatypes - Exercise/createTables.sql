@@ -110,6 +110,73 @@ PRIMARY KEY users(id),
 CHANGE COLUMN username
 username VARCHAR(30) UNIQUE;
 
+-- 11
+
+CREATE DATABASE movies;
+	DEFAULT CHARACTER SET = 'utf8mb4';
+
+CREATE TABLE directors(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    director_name VARCHAR(80) NOT NULL,
+    notes VARCHAR(257)
+);
+
+INSERT INTO directors (director_name, notes) VALUES
+('Peter1', 'test1'),
+('Peter2', 'test2'),
+('Peter3', 'test3'),
+('Peter4', 'test4'),
+('Peter5', 'test5');
+
+CREATE TABLE genres(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    genre_name VARCHAR(80) NOT NULL,
+    notes VARCHAR(257)
+);
+
+INSERT INTO genres (genre_name, notes) VALUES
+('ACTION', 'test1'),
+('COMEDY', 'test2'),
+('DRAMA', 'test3'),
+('THRILLER', 'test4'),
+('ROMANTIC', 'test5');
+
+CREATE TABLE categories(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(80) NOT NULL,
+    notes VARCHAR(257)
+);
+
+INSERT INTO categories(category_name, notes) VALUES
+('military','test1'),
+('childish','test2'),
+('historical','test3'),
+('fun','test4'),
+('adventurous','test5');
+
+CREATE TABLE movies(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(50) NOT NULL,
+    director_id INT NOT NULL, 
+    copyright_year YEAR, 
+    length DOUBLE(10, 2), 
+    genre_id INT NOT NULL, 
+    category_id INT NOT NULL, 
+    rating DOUBLE(3,2), 
+    notes VARCHAR(257)
+);
+
+INSERT INTO movies(title, director_id, copyright_year,length, genre_id, category_id, rating, notes) VALUE 
+('Black Widow', 1, '2000', 1, 1, 1, 1, 'test1'),
+('Just Go With It', 2, '2000', 2, 2, 2, 2, 'test2'),
+('Fair Play', 3, '2000', 3, 3, 3, 3, 'test3'),
+('The Guilty', 4, '2000', 4, 4, 4, 4, 'test4'),
+('The Notebook', 5, '2000', 5, 5, 5, 5, 'test5');
+
+
+
+
+
 
 
 
