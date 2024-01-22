@@ -101,6 +101,15 @@ ADD PRIMARY KEY(id, username);
 ALTER TABLE users
 CHANGE last_login_time last_login_time DATETIME DEFAULT NOW();
 
+-- 10
+
+ALTER TABLE users
+DROP PRIMARY KEY,
+ADD CONSTRAINT pk_users
+PRIMARY KEY users(id),
+CHANGE COLUMN username
+username VARCHAR(30) UNIQUE;
+
 
 
 
