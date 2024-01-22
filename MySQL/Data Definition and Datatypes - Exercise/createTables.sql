@@ -90,5 +90,11 @@ VALUES (1, 'Ivan', '123456', 'test', '1976-05-01', true),
 (4, 'Maya', '123456','test', '1976-05-04', true),
 (5, 'Nana', '123456','test', '1976-05-05', true);
 
+-- 8
+
+ALTER TABLE users
+DROP PRIMARY KEY,
+ADD PRIMARY KEY(id, username);
+
 
 
