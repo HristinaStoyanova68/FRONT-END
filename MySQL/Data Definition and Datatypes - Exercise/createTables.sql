@@ -275,10 +275,78 @@ INSERT INTO employees(first_name, last_name, title, notes) VALUES
  (2, 2, 2, 'GOOD', 100, 1111, 2222, 3333, '2022-05-05','2022-05-06', 1, 1.2, 2.2, true, 'test'),
  (3, 3, 3, 'GOOD', 100, 1111, 2222, 3333, '2022-05-05','2022-05-06', 1, 1.2, 2.2, true, 'test');
 
+--  13
+
  CREATE DATABASE soft_uni
  DEFAULT CHARACTER SET = 'utf8mb4';
  
  USE soft_uni;
+
+ -- towns (id, name)
+ 
+ CREATE TABLE towns(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+ );
+ 
+ INSERT INTO towns(name) VALUE 
+ ('Sofia'),
+ ('Plovdiv'), 
+ ('Varna'),
+ ('Burgas');
+
+-- addresses (id, address_text, town_id)
+
+CREATE TABLE addresses(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    address_text VARCHAR(255) NOT NULL,
+    town_id INT NOT NULL
+ );
+ 
+ INSERT INTO addresses(address_text, town_id) VALUES 
+ ('Lulin1', 1),
+ ('Lulin2', 2), 
+ ('Lulin3', 3),
+ ('Lulin4', 4);
+
+-- departments (id, name)
+
+CREATE TABLE departments(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+ );
+ 
+ INSERT INTO departments(name) VALUE 
+ ('Engineering'),
+ ('Sales'), 
+ ('Marketing'),
+ ('Software Development'),
+ ('Quality Assurance');
+
+-- employees (id, first_name, middle_name, last_name, job_title, department_id, hire_date, salary, address_id)
+
+CREATE TABLE employees(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    first_name VARCHAR(80) NOT NULL, 
+    middle_name VARCHAR(80), 
+    last_name VARCHAR(80) NOT NULL, 
+    job_title VARCHAR(80) NOT NULL, 
+    department_id INT NOT NULL, 
+    hire_date DATE, 
+    salary DOUBLE, 
+    address_id INT 
+);
+
+INSERT INTO employees(first_name, middle_name, last_name, job_title, department_id, hire_date, salary, address_id) VALUES 
+('Ivan', 'Ivanov', 'Ivanov', '.NET Developer', 4, '2013-02-01', 3500.00, 1),
+('Peter', 'Petrov', 'Petrov', 'Senior Engineer', 1, '2004-03-02', 4000.00, 2),
+('Maria', 'Petrova', 'Ivanova', 'Intern', 5, '2016-08-28', 525.25, 3),
+('Georgi', 'Terziev', 'Ivanov', 'CEO', 2, '2007-12-09', 3000.00, 4),
+('Peter', 'Pan', 'Pan', 'Intern', 3, '2016-08-28', 599.88, 1);
+
+UPDATE employees
+SET first_name = 'Petar'
+WHERE id = 2;
 
 
 
