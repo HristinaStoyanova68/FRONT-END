@@ -354,6 +354,18 @@ SELECT * FROM towns;
 SELECT * FROM departments;
 SELECT * FROM employees;
 
+-- 15
+
+SELECT * FROM towns ORDER BY name ASC;
+SELECT * FROM departments ORDER BY name ASC;
+SELECT * FROM employees ORDER BY salary DESC;
+
+-- 16
+
+SELECT name FROM towns ORDER BY name ASC;
+SELECT name FROM departments ORDER BY name ASC;
+SELECT first_name, last_name, job_title, salary FROM employees ORDER BY salary DESC;
+
 
 
 
