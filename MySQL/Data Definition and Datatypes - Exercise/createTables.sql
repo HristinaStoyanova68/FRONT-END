@@ -275,6 +275,11 @@ INSERT INTO employees(first_name, last_name, title, notes) VALUES
  (2, 2, 2, 'GOOD', 100, 1111, 2222, 3333, '2022-05-05','2022-05-06', 1, 1.2, 2.2, true, 'test'),
  (3, 3, 3, 'GOOD', 100, 1111, 2222, 3333, '2022-05-05','2022-05-06', 1, 1.2, 2.2, true, 'test');
 
+ CREATE DATABASE soft_uni
+ DEFAULT CHARACTER SET = 'utf8mb4';
+ 
+ USE soft_uni;
+
 
 
 
