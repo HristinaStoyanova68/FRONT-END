@@ -166,12 +166,55 @@ CREATE TABLE movies(
     notes VARCHAR(257)
 );
 
-INSERT INTO movies(title, director_id, copyright_year,length, genre_id, category_id, rating, notes) VALUE 
+INSERT INTO movies(title, director_id, copyright_year,length, genre_id, category_id, rating, notes) VALUES 
 ('Black Widow', 1, '2000', 1, 1, 1, 1, 'test1'),
 ('Just Go With It', 2, '2000', 2, 2, 2, 2, 'test2'),
 ('Fair Play', 3, '2000', 3, 3, 3, 3, 'test3'),
 ('The Guilty', 4, '2000', 4, 4, 4, 4, 'test4'),
 ('The Notebook', 5, '2000', 5, 5, 5, 5, 'test5');
+
+-- 12
+
+CREATE DATABASE car_rental
+DEFAULT CHARACTER SET = 'utf8mb4';
+
+USE car_rental;
+
+-- categories (id, category, daily_rate, weekly_rate, monthly_rate, weekend_rate)
+
+CREATE TABLE categories(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    category VARCHAR(257), 
+    daily_rate DOUBLE(6, 2), 
+    weekly_rate DOUBLE(6, 2), 
+    monthly_rate DOUBLE(6, 2), 
+    weekend_rate DOUBLE(6, 2)
+);
+
+INSERT INTO categories (category, daily_rate, weekly_rate, monthly_rate, weekend_rate) VALUES
+('Car', 1, 2, 3, 4),
+('Bus', 1, 2, 3, 4),
+('Van', 1, 2, 3, 4);
+
+-- cars (id, plate_number, make, model, car_year, category_id, doors, picture, car_condition, available) 
+
+CREATE TABLE  cars(
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    plate_number VARCHAR(30) NOT NULL UNIQUE, 
+    make VARCHAR(255) NOT NULL, 
+    model VARCHAR(255) NOT NULL, 
+    car_year DATE, 
+    category_id INT, 
+    doors INT, 
+    picture BLOB, 
+    car_condition VARCHAR(255), 
+    available BOOLEAN
+);
+
+INSERT INTO cars(plate_number, make, model, car_year, category_id, doors, picture, car_condition, available) VALUES
+('TX2020AX', 'BMW', '323', '1999-05-05', 1, 3, 'BEST', 'GOOD', true),
+('TX2021AX', 'Lada', '325', '1999-05-06', 1, 3, 'BEST', 'GOOD', false),
+('TX2022AX', 'Audi', '3', '1999-05-07', 1, 3, 'BEST', 'GOOD', true);
 
 
 
