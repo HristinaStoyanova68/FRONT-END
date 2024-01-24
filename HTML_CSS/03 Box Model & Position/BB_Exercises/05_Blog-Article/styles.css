@@ -17,14 +17,14 @@ article p {
     text-indent: 30px;
 }
 
-div {
+article div {
     margin-bottom: 30px;
     border-top: 2px solid #fff;
     position: relative;
     top: 20px;
 }
 
-span {
+article span {
     width: 120px;
     font-size: 14px;
     text-align: center;

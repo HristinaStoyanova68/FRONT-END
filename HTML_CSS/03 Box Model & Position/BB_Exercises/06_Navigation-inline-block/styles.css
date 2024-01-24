@@ -1,5 +1,6 @@
 body {
-    font-family: Helvetica, sans-serif;
+    font: 16px/1.5 Helvetica, sans-serif;
+    padding: 4em;
 }
 
 body, input, textarea {
@@ -11,7 +12,7 @@ section {
 }
 
 header {
-    border-bottom: 2px solid rgb(79, 77, 77);
+    border-bottom: 2px solid rgb(185, 180, 180);
 }
 
 header h1,
