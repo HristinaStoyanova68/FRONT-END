@@ -1,0 +1,39 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    /* position: relative; */
+}
+
+body, input, textarea {
+    font: inherit;
+    line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+aside {   
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+aside ul li{
+    max-width: 60%;
+}
+
+article header {
+    margin-bottom: 2.5em;
+}
+
+article,
+article section img {    
+    max-width: 64%;
+    margin: 1.5em;
+}
+
+article section img {
+    margin: 0;
+}
