@@ -19,11 +19,17 @@
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 0.1em 0;
+    padding: 0.1em;
+  }
+
+  nav ul ul ul {
+    top: 0;
+    left: 100%;
+    margin-top: - 0.1em;
   }
   
   nav ul ul li {
-    padding: 0.1em 0;
+    padding: 0.1em;
   }
   
   nav > ul > li {
@@ -37,7 +43,7 @@
     position: relative;
   }
   
-  nav li:hover ul {
+  nav li:hover > ul {
     display: block;
   }
   
@@ -48,6 +54,9 @@
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 0.3em;
-  }  nav a:hover {
+  }  
+  
+  nav li:hover > a,
+  nav a:hover {
     background-color: #69A;
   }

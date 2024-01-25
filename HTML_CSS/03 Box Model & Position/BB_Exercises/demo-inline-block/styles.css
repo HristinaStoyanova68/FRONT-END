@@ -1,0 +1,9 @@
+article {
+    max-width: 60%;
+}
+
+article,
+aside {
+    display: inline-block;
+    border: 2px solid black;
+}

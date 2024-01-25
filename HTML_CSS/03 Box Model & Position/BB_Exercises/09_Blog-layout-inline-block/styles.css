@@ -2,7 +2,6 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: rgb(238, 238, 238);
     color: rgb(51, 51, 51);
-    /* position: relative; */
 }
 
 body, input, textarea {
@@ -14,26 +13,45 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
-aside {   
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+article,
+aside {
+    /* border: 2px solid black; */
 
-aside ul li{
-    max-width: 60%;
+    display: inline-block;
 }
 
 article header {
     margin-bottom: 2.5em;
 }
 
+article header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
 article,
 article section img {    
-    max-width: 64%;
-    margin: 1.5em;
+    max-width: 60%;
+    margin: 1em;
 }
 
 article section img {
+    margin: 0;
+}
+
+aside ul li{
+    max-width: 60%;
+    
+} 
+
+aside {   
+    margin: 1.5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+aside h3 {
+    font-size: 24px;
     margin: 0;
 }
