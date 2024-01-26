@@ -1,0 +1,6 @@
+.slide {
+    width: 50vw;
+    height: 80vh;
+    border: 2px solid red;
+    margin: 2em auto;
+}

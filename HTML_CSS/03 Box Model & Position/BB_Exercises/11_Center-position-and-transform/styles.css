@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    height: 80vh;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1em 0.5em rgb(0, 0, 0, 0.2);
+    border: 1px solid #CCC;
+}
+
+.ar-16x9 {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.ar-16x9::after {
+    display: block;
+    content: '';
+    border: 2px solid black;
+    padding-top: 56.25%;
+}
+
+.ar-16x9 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    padding-bottom: 1em;
+}
+
+.content > h3,
+.content > p {
+    margin: 1em;
+}
+
+.content > h3 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: bold;
+}
+
+.content a {
+    background-color: rgb(0, 153, 0);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    margin-left: 83%;
+    word-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+}
