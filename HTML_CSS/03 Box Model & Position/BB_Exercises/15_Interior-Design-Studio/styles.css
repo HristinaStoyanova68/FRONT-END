@@ -1,1 +1,43 @@
-//TODO
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.fullscreen-image {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.fullscreen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fullscreen-image h1 {
+    font-size: 45px;
+    position: absolute;
+    color: antiquewhite;
+    top:120px;
+    left: 470px;
+    text-shadow: 1px 1px 20px black;
+}
