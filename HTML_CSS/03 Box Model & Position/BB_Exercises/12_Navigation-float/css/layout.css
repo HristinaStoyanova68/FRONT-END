@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.site {
+    position: relative;
+    margin: 2em;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.site-header {
+    padding: 1em;
+    padding-left: 0;
+    position: relative;
+    border-bottom: 2px solid #000;
+    margin-bottom: 1em;
+}
+
+.site-title,
+.site-nav {
+    display: inline-block;
+}
+
+.site-title {
+    display: inline-block;
+}
+
+.site-nav ul {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.site-nav ul li {
+    display: inline-block;
+    margin-left: 0.7em;
+}
+
+.site-nav ul:first-child {
+    margin-left: 8em;
+}
+
+.gallery {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000;
+    padding: 1rem;
+    vertical-align: middle;
+    box-shadow: 0 0 1em 0.5em rgb(0, 0, 0, 0.25);
+}
+
+.gallery img {
+    
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    /* border: 2px solid #000; */
+}
+
+.site-main,
+.sitebar {
+    display: inline-block;
+}
+
+.site-main {
+    max-width: 70%;
+}
+
+.sitebar ul {
+    margin: 0.7em;
+    padding-left: 1.3em;
+}
+
+.sitebar ul li  a{
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
+
+.sitebar {
+    margin: 1em;
+    position: absolute;
+    top: 0;
+    right: 5em;
+}
+
+.first-img {
+    float: right;
+    margin: 1em;
+    margin-top: 0;
+}
+
+.second-img {
+    float: left;
+    margin: 1em;
+    margin-top: 0.3em;
+    margin-left: 0;
+}
+
+.post h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font: 1.5em/1.2 Georgia, serif;
+    font-weight: bold;
+}
+
+
+
+.blockquote {
+    position: relative;
+    margin-left: 1em;
+    border-left: 1.5px solid #787676;
+    padding-left: 1.5em;
+    padding-bottom: 30px;
+    width: 50%;
+    float: right;
+}
+
+
+
+.author {
+    position: absolute;
+    margin-top: 0.5em;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
