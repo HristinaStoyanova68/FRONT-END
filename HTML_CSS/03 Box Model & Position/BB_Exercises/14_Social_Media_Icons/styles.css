@@ -1,0 +1,32 @@
+ul li {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(244, 239, 239);
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.facebook,
+.twitter,
+.google,
+.linkedin {
+    color: black;
+}
+
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover {
+    color: lightskyblue;
+}
+
+.google:hover {
+    color: red;
+}
