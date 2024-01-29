@@ -1,8 +1,5 @@
 .flex-container {
   display: flex;
-}
-
-.flex-container {
   background-color: DodgerBlue;
   width: 300px;
 }
