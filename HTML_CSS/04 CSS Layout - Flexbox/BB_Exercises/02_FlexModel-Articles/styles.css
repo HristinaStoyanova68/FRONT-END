@@ -19,9 +19,9 @@ html {
 .card {
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 10px;
-    max-width: 290px;
+    max-width: 270px;
 }
 
 .card h2 {
