@@ -22,7 +22,7 @@ footer {
     background-color: #FFF;
     border-radius: 0.4rem;
     color: #000;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
 }
 
