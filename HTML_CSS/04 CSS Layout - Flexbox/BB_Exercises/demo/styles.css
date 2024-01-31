@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    border: 1px solid black;
+    max-width: 65vw;
+    max-height: 100vh;
+}
+
+.first,
+.second {
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    flex: 2.5 1;
+}
+
+.second {
+    flex: 1;
+}
+
+.header-up,
+.header-down {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.workdays,
+.weekends {
+    display: flex;
+    flex-direction: row;
+}
+
+.workdays span,
+.weekends span,
+.second span {
+    flex: 1;
+}
+
+span {
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 4em;
+    border: 1px solid black;
+}
+
+
+
+.second span {
+    padding-top: 0;
+}
