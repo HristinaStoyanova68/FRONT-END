@@ -29,15 +29,34 @@ h1 {font-size: 2.8em;}
 h2 {font-size: 2.2em;}
 h3 {font-size: 1.8em;}
 
+.align-left {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+img[class*="align"] {
+    border: 2px solid #333;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 0.5em 0 rgba(0 , 0, 0, 0.3);
+}
+
 .page {
-    max-width: 70em;
+    max-width: 60em;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
 }
 
 .site-header {
     flex: 0 0 100%;
+    border-bottom: 2px solid #000;
 }
 
 .site-main {
@@ -47,3 +66,4 @@ h3 {font-size: 1.8em;}
 .site-aside {
     flex: 1 0 auto;
 }
+
