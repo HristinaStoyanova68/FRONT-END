@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    background-color: #eee;
+}
+
+p, ul {
+    padding-bottom: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {font-size: 2.8em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.8em;}
+
+.page {
+    max-width: 70em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-header {
+    flex: 0 0 100%;
+}
+
+.site-main {
+    flex: 0 0 60%;
+}
+
+.site-aside {
+    flex: 1 0 auto;
+}
