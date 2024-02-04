@@ -9,12 +9,9 @@ html {
 
 .site-header {
     display: flex;
-    /* border: 2px solid black; */
     padding-bottom: 1em;
     border-bottom: 2px solid black;
-    /* align-items: center; */
     justify-content: space-between;
-    /* padding: 2em; */
     margin: 2.5em;
 }
 
@@ -25,6 +22,7 @@ html {
 }
 
 .header-title {
+    font-family: Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
