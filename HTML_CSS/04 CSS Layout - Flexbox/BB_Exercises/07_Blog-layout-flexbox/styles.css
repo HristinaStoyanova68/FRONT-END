@@ -96,7 +96,7 @@ blockquote.align-left {
 .site-title {
     text-transform: uppercase;
     font-size: 32px;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     font-weight: bold;
 }
 
