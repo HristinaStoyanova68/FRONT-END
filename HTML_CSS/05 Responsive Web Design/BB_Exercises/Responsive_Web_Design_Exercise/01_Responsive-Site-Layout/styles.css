@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+@media (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+header,
+main,
+aside,
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    background-color: lightblue;
+    border-radius: 0.3em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    align-items: center;
+    flex-basis: 100%;
+    min-height: 100px;
+}
+
+footer {
+    min-height: 50px;
+}
+
+header p,
+main h2 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+main,
+aside {
+    flex-direction: column;
+
+}
+
+main {
+    padding: 1.5em;
+    flex: 1 1 0;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+aside {
+    flex: 0 1 130px;
+    min-width: 130px;
+}
+
+aside ul {
+    padding: 0.5em;
+    list-style: none;
+}
+
+main ul li {
+    margin-left: 2.5em;
+}
+
+main h2,
+main ul li,
+aside ul li {
+    padding-bottom: 0.5em;
+}
+
+aside ul li a {
+    text-decoration: none;
+}
+
+
+
+
+
+
