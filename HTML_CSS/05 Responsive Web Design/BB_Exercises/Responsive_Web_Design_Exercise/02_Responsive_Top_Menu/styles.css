@@ -24,14 +24,21 @@ body {
         flex-direction: column;
     }
 
+
     header,
     nav ul {
         flex-direction: column;
     }
-    
+
+    nav ul {
+    margin-bottom: 1em;
+
+    }
+
     header p{
         align-self: flex-start;
-        margin: 1em 0 ;
+    margin-bottom: 0.5em;
+
     }
 }
 
@@ -54,7 +61,6 @@ nav {
 
 nav ul {
     display: flex;
-
     flex: 1;
     gap: 20px;
     list-style-type: none;
