@@ -28,8 +28,9 @@ body {
     nav ul {
         flex-direction: column;
     }
-
+    
     header p{
+        align-self: flex-start;
         margin: 1em 0 ;
     }
 }
