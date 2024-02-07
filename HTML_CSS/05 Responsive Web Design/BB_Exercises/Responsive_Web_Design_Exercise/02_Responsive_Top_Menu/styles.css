@@ -72,10 +72,11 @@ nav ul {
     display: flex;
     flex: 1;
     gap: 20px;
-    list-style-type: none;
 }
 
-nav ul li a {
+nav a {
+    display: block;
+    padding: 1em 1.5em;
     text-decoration: none;
 }
 
