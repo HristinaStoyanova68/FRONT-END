@@ -76,7 +76,6 @@ nav ul {
 }
 
 nav ul li a {
-
     text-decoration: none;
 }
 
@@ -89,8 +88,6 @@ header,
 footer {
     align-items: center;
     justify-content: space-between;
-
-
     flex-basis: 100%;
     min-height: 100px;
 }
