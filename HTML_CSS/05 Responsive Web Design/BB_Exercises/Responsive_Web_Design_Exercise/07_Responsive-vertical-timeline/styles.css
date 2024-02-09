@@ -74,6 +74,10 @@ body {
     padding-bottom: 1.5em;
 }
 
+.timeline .event li {
+    list-style-position: outside;
+}
+
 @media (min-width: 600px) {
     .timeline::before {
         left: calc(50% - 0.25em);
