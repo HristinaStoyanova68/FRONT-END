@@ -1,6 +1,5 @@
 body {
-    border: 2px solid #7a0505;
-
+    border: 2px solid #e80b0b;
     padding: 0.5em;
     min-height: 100vh;
     display: flex;
@@ -10,7 +9,76 @@ body {
     background-color: #b1aeb1;
 }
 
-.site, main {
+.site {
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-to-newsletter {
+    /* box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    max-width: 100%; */
+    background-color: #fff;
+    border: 2px solid green;
+}
+
+.site-header,
+.site-footer {
+    /* max-width: 100%; */
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.site-main {
+    /* max-width: 80%; */
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-main > .website,
+.site-main > .our-team,
+.site-main > .testimonials {
+    max-width: 80%;
+    border: 2px solid yellow;
+}
+
+.site-main > .our-team,
+.site-main > .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-main > .our-team > .cards, 
+.site-main > .testimonials > .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    border: 2px solid violet;
+}
+
+
+
+
+/* .site, main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,4 +131,4 @@ main {
     max-width: 80%;
     border: 2px solid blue;
     
-}
+} */
