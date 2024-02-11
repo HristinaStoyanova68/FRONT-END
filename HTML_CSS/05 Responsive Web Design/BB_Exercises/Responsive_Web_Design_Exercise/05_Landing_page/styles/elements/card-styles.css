@@ -7,8 +7,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
     /* flex: 1; */
-    background-color: #b1aeb1;
+    background-color: #d1ced1;
     /* gap:2em; */
     /* border: 2px solid black; */
 }
@@ -38,7 +40,8 @@
     position: relative;
     border-radius: 50%;
     background: #090;
-    border: 3px solid #959393;
+    border: 3px solid #acaaaa;
+    border-color: #d6cfcf;
     box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
  }
 
