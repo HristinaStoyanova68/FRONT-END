@@ -71,3 +71,16 @@
 .content-container p.description {
     font-style: italic;
 }
+
+.site-main .website-card {
+    padding: 0 4em;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+} 
+
+.site-main .website-card .media {
+    /* border: 2px solid black; */
+    padding-right: 8em;
+}
