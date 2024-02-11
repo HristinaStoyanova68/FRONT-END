@@ -46,6 +46,7 @@ aside {
 }
 
 .ui-fancy-quotes .quote {
+    border: 2px solid #000;
     container: quote / inline-size;
 }
 
