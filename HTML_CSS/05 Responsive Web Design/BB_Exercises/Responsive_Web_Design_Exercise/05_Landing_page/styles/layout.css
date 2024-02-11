@@ -1,6 +1,6 @@
 body {
-    border: 2px solid #e80b0b;
-    padding: 0.5em;
+    /* border: 2px solid #e80b0b; */
+    /* padding: 0.5em; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ body {
 }
 
 .site {
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,11 +20,46 @@ body {
 .site-header,
 .site-footer {
     min-width: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.site-footer {
+    /* border-top: 2px solid #787676; */
+    
+    justify-content: center;
+    padding: 1em 0;
+    box-shadow: 0px -8px 7px -8px rgba(0, 0, 0, 1);
+    /* justify-content: space-around; */
+}
+
+.footer,
+.header {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    /* border: 2px solid #000; */
+}
+
+.header {
+    min-width: 80%;
+}
+
+
+/* 
+.card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    } */
 
 .site-title {
     margin-top: 0;
@@ -37,91 +72,102 @@ body {
     margin-top: 0;
 }
 
-.site-nav li {
-    display: inline-block;
-}
 
-.site-nav li:last-child {
-    margin-right: 3em;
-}
 
-.site-nav a {
-    text-decoration: none;
-    padding-left: 1.5em;
-}
-
-.site-main {
-    border: 2px solid blue;
+.site-main,
+.site-main .sign-up-to-newsletter  {
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid grey;
+    /* box-shadow: 0px 7px 7px -5px rgba(0, 0, 0, 0.75); */
+    ;
 }
 
-.site-main > .sign-up-to-newsletter {
+.site-main .sign-up-to-newsletter {
     background-color: #fff;
     border: 2px solid green;
+    min-width: 100%;
 }
 
-.site-main > .website,
-.site-main > .our-team,
-.site-main > .testimonials {
+.site-main>.website,
+.site-main>.our-team,
+.site-main>.testimonials {
     max-width: 80%;
     border: 2px solid yellow;
 }
 
-.site-main > .our-team,
-.site-main > .testimonials {
+.site-main>.our-team,
+.site-main>.testimonials {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.site-main > .our-team > .cards, 
-.site-main > .testimonials > .cards {
+.site-main>.our-team>.cards,
+.site-main>.testimonials>.cards {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 1em;
 }
 
-.card {
-    border: 2px solid violet;
+
+
+
+.site-footer section {
+    /* border: 2px solid rgb(92, 54, 54); */
+    width: 33%;
+    box-sizing: border-box;
+    max-height: 200px;
+
 }
 
-
-
-
-/* .site, main {
+.site-footer .sitemap {
+    /* border: 2px solid rgb(92, 54, 54); */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border: 2px solid #000;
-    padding: 0 2em;
-    max-width: 80%;
+    /* flex-wrap: wrap; */
+
+    max-height: 200px;
+    /* overflow-y: auto; */
 }
 
-.site-header {
-    border: 2px solid #000;
-    padding: 0 3em;
+.sitemap .sitemap-title {
+    /* border: 2px solid red; */
+    max-width: 100%;
+    /* padding-left: 1em; */
+    margin-bottom: 0;
+}
+
+.sitemap .sitemap-content {
+    flex-grow: 1;
+}
+
+.site-footer .sitemap ul {
+    /* border: 2px solid red; */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-
-
-
-main {
-    margin: 0 auto;
-}
-
-.site-main{
+.footer .contact-info {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
-    border: 2px solid blue;
-    
-} */
+    max-height: 200px;
+}
+
+.site-footer .contact-info-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
