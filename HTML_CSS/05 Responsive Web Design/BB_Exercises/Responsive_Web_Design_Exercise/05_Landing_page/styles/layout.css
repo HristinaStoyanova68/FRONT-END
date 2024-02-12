@@ -9,6 +9,22 @@ body {
     background-color: #d1ced1;
 }
 
+/* @media (min-width: 800px) {
+    .site {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+} */
+
+/* @media (max-width: 920px) {
+    .site {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+} */
+
 .site {
     /* border: 2px solid #fff; */
     display: flex;
