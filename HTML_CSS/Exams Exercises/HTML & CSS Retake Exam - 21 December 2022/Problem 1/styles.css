@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 Poppins, sans-serif;
+}
+
+body {
+    padding: 2em;
+}
+
+img {
+    display: block;
+    width: 100%;height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.section-header h2 span {
+    /* color: rgba(70, 118, 187, 1); */
+    color: #4676BB;
+}
+
+.section-content {
+    display: flex;
+    gap: 1.5em;
+}
+
+.section-content article,
+.section-content article .media {
+    display: block;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+/* for left button position */
+.section-content article .entry-content {
+    padding: 1.5em;
+}
+
+/* for right button position */
+/* .section-content article .entry-content {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+.section-content article .entry-content p {
+    margin: 1em 0;
+}
+
+.section-content article {
+    flex: 1 1 30%;
+    background-color: #829DB0;
+    color: black;
+}
+
+/* for left button position */
+.section-content article .button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #31488C;
+    outline: 1px solid #fff;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    background-color: #337DC5;
+}
+
+/* for right button position */
+/* .section-content article .button {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #31488C;
+    outline: 1px solid #fff;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    background-color: #337DC5;
+    align-self: flex-end;
+} */
