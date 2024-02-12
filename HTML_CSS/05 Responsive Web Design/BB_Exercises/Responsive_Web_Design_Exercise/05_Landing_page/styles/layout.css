@@ -40,6 +40,7 @@ body {
     gap: 2em;
     /* border: 2px solid #000; */
 }
+
 .header {
     min-width: 80%;
 }
@@ -68,13 +69,14 @@ body {
 }
 
 .hr-short {
-    height: 2px; 
+    height: 2px;
     margin: 0 auto;
     margin-bottom: 1em;
-    background-color: #000; 
-    width: 50px; 
+    background-color: #000;
+    width: 50px;
     border: none;
 }
+
 .sign-up-to-newsletter .sign-up-title .hr-short {
     height: 3.5px;
 }
@@ -91,8 +93,8 @@ body {
     justify-content: center;
     align-items: center;
     /* border-top: 2px solid grey; */
-    
-    
+
+
 }
 
 .site-main .sign-up-to-newsletter {
@@ -179,12 +181,15 @@ body {
 .site-footer .sitemap ul {
     /* border: 2px solid red; */
     display: flex;
-    gap: 1em;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 1em;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
+
 
 .footer .contact-info {
     flex: 1;
