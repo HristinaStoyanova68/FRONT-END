@@ -75,6 +75,9 @@ body {
     width: 50px; 
     border: none;
 }
+.sign-up-to-newsletter .sign-up-title .hr-short {
+    height: 3.5px;
+}
 
 .site-main {
     margin-top: 2em;
