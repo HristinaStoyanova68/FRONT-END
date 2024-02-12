@@ -45,7 +45,6 @@ body {
     min-width: 80%;
 }
 
-
 /* 
 .card-container {
         flex-direction: row;
@@ -93,8 +92,6 @@ body {
     justify-content: center;
     align-items: center;
     /* border-top: 2px solid grey; */
-
-
 }
 
 .site-main .sign-up-to-newsletter {
@@ -119,7 +116,6 @@ body {
     max-width: 80%;
     /* border: 2px solid yellow; */
 }
-
 
 .site-main>.our-team,
 .site-main>.testimonials {
@@ -146,8 +142,6 @@ body {
     position: relative;
     z-index: 1;
 }
-
-
 
 .site-footer section {
     /* border: 2px solid rgb(92, 54, 54); */
