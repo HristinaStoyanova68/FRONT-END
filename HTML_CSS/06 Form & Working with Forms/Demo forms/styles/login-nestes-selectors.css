@@ -64,14 +64,14 @@ input:is([type="text"], [type="password"]) {
     /* --with inherit-- */
     color: inherit;
 
-    &:invalid {
+    &:user-invalid {
         /* border-color: red; */
         /* --or-- */
         /*color: red; --with inherit-- */
         border-color: currentColor;
     }
 
-    &:valid {
+    &:user-valid {
         /* border-color: green; */
         /* --or-- */
         /*color: green; --with inherit-- */
@@ -90,11 +90,11 @@ input:is([type="text"], [type="password"]) {
     }
 }
 
-.field:has(input:invalid) {
+.field:has(input:user-invalid) {
     color: red;
 }
 
-.field:has(input:valid) {
+.field:has(input:user-valid) {
     color: green;
 }
 
