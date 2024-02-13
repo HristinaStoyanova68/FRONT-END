@@ -1,0 +1,135 @@
+@media (max-width:600px)  {
+    
+    .div-header,
+    .options a,
+    .gallery article a,
+    .blog-title h4 span,
+    .blog-title a,
+    .blog article img,
+    .magazine-title a {
+        display: none;
+    }
+
+    .button-header {
+        margin-bottom: 75px;
+    }
+
+    .options {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .options article {
+        width: auto;
+    }
+
+    .options article h4 {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery article>img {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .blog {
+        padding-bottom: 10px;
+    }
+
+    .blog-title {
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+
+    .blog-title h4 {
+        font-size: 20px;
+    }
+
+    .blog article {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #about-blog {
+        width: 100%;
+        margin: 1em;
+    }
+
+    .magazsine {
+        padding-top: 0;
+    }
+
+    .magazine-title h4{
+        font-size: 15px;
+    }
+
+    .magazine article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .magazine-info {
+        margin: 0 10px;
+       display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    .magazine-info h2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .magazine-info img {
+        width: 545px;
+        height: 200px;
+    }
+
+    .magazine-info h3 {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .magazine-info p {
+        font-size: 14px;
+        margin: 1em 3em;
+        text-align: center;
+    }
+
+    .magazine-info button {
+        font-size: 8px;
+        margin: 10px 0 45px 0;
+        padding: 6px 8px;
+    }
+
+    footer {
+        margin: 0;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    footer .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    i.fa {
+        font-size: 10px;
+        padding: 0;
+    }
+    
+}
+    
