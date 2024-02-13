@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, button {
+    font: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+form {
+    display: block;
+    background-color: #fff;
+    border-radius: 0.3em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 0.2em;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    order: -1;
+}
+
+.field .helper {
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.3;
+    transition: 0.3s ease-in;
+}
+
+input:is([type="text"], [type="password"]) {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    outline: none;
+    /* --with inherit-- */
+    color: inherit;
+
+    &:invalid {
+        /* border-color: red; */
+        /* --or-- */
+        /*color: red; --with inherit-- */
+        border-color: currentColor;
+    }
+
+    &:valid {
+        /* border-color: green; */
+        /* --or-- */
+        /*color: green; --with inherit-- */
+        border-color: currentColor;
+    }
+
+    &:focus {
+        /* border-color: orange; */
+        /* --or-- */
+        /*color: orange; --with inherit-- */
+        border-color: currentColor;
+
+        & ~ .helper {
+            opacity: 1;
+        }
+    }
+}
+
+.field:has(input:invalid) {
+    color: red;
+}
+
+.field:has(input:valid) {
+    color: green;
+}
+
+.field:has(input:focus) {
+    color: orange;
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: #EEE;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:focus {
+    background-color: orange;
+}
