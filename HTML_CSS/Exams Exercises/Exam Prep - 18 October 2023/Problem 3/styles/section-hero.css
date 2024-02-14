@@ -1,0 +1,21 @@
+.section-hero-banner {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.section-hero-banner a {
+    color: #fff;
+}
+
+.section-hero-banner .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 2em;
+}
+
+.section-hero-banner .container p {
+    max-width: 54ch;
+    text-align: center;
+}

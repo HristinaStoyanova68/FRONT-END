@@ -1,0 +1,66 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-top-bar {
+    background-color: #D01919;
+    color: #fff;
+    
+}
+
+.section-top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.section-top-bar .socials {
+    display: flex;
+}
+
+.section-top-bar .socials li,
+.section-top-bar .socials li a {
+    display: block;
+    padding-left: 0.5em;
+}
+
+.section-top-bar .socials a span {
+    display: none;
+}
+
+.section-top-bar a {
+    color: #fff;
+}
+
+.section-site-header {
+    background-color: #000;
+    color: #fff;
+}
+
+.section-site-header a {
+    color: #fff;
+}
+
+.section-site-header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.section-site-header .site-title {
+    visibility: hidden;
+}
+
+.section-features {
+    background-color: #FFFFFF;
+}
+
+.section-coaches {
+    background-color: #EFEFEF;
+}
+
+.section-site-footer {
+    background-color: #D01919;
+}
