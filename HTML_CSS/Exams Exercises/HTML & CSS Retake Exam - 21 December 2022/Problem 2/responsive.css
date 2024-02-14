@@ -57,7 +57,25 @@
     
     #about-blog {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 1em;
+    }
+
+    #about-blog h3 {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    #about-blog p {
+        max-width: 75ch;
+        text-align: center;
+    }
+
+    #about-blog button {
+        align-self: flex-start;
+        margin-left: 4em;
     }
 
     .magazsine {
