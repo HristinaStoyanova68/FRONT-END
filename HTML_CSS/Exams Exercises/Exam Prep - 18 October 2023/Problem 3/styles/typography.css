@@ -18,8 +18,8 @@ html {
 }
 
 .section-hero-banner a {
-    display: inline-block;
-    background-color: red;
+    background-color: #D01919;
+    color: #fff;
     font-size: 9px;
     font-weight: bold;
     padding: 0.5em 1.3em;
