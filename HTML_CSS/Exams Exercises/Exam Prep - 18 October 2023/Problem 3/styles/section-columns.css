@@ -33,6 +33,10 @@
     color: #D01919;
 }
 
+.section-coaches img {
+    border-radius: 0.5em;
+}
+
 .section-coaches h4 {
     color: #D01919;
 }
