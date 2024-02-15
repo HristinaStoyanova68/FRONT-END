@@ -37,11 +37,11 @@ article {
 }
 .media {
     display: flex;
-    flex: 1 0 290px;
+    flex: 0 0 290px;
 }
 
 header {
-    margin: 2em 0 0 0;
+    margin: 1.5em 0 0 0;
 }
 
 header p {
@@ -71,7 +71,7 @@ header h2 {
 
 .buttons a {
     display: block;
-    border: 1.5px solid #000;
+    border: 1px solid #000;
     border-radius: 0.4em;
     padding: 0.5em 1em;
     color: #000;
