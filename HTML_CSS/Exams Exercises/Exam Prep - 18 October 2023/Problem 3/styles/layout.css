@@ -70,6 +70,14 @@ img {
     background-color: #fff;
 }
 
+.section-features .section-content {
+    padding: 0 7em;
+}
+
+.section-coaches .section-content {
+    padding: 0 6em;
+}
+
 .hr-short {
     height: 2px;
     margin:  0 auto;
