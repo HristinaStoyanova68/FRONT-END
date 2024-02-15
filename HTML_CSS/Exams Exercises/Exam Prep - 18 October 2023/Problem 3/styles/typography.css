@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Serif");
+
 html {
-    font: 12px/1.5 Verdana, sans-serif;
+    font: 12px/1.5 "PT Sans", sans-serif;
+}
+
+.section-hero-banner h2 {
+    font-size: 25px;
+    letter-spacing: 0.3em;
+    word-spacing: 0.3em;
+    padding: 1em;
+}
+
+.section-hero-banner p {
+    font-size: 12px;
+    word-spacing: 0.2em;
+    padding: 1em;
+}
+
+.section-hero-banner a {
+    display: inline-block;
+    background-color: red;
+    font-size: 10px;
+    padding: 0.3em 0.5em;
+    border-radius: 0.3em;
+    text-decoration: none;
 }
