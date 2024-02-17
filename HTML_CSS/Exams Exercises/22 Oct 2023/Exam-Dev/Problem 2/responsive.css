@@ -110,20 +110,31 @@
         align-items: center;
         justify-content: center;
         /* margin-left: 3em; */
-    } 
+    }
 
-    .home-footer1 {
+    /* with column-reverse */
+    /* .home-footer1 {
         padding: 2em 2em 0.5em 2em;
         flex-direction: column-reverse;
+    } */
+
+    /* with order property */
+    .home-footer1 {
+        padding: 2em 2em 0.5em 2em;
+        flex-direction: column;
+    }
+
+    .home-container09 {
+        order: 1000;
     }
 
     .home-links-container {
         flex-direction: column;
     }
-        
-        
 
-        
 
-     
-} 
+
+
+
+
+}
