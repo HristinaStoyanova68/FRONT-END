@@ -183,9 +183,12 @@ section.avatars {
     justify-content: flex-start;
 }
 
+.site-footer .column ul li {
+    list-style: none outside;
+}
+
 .site-footer .column-container li {
     text-transform: uppercase;
-    opacity: 0.3;
 }
 
 .site-footer.last-footer{
@@ -193,6 +196,8 @@ section.avatars {
     border-top: 1px solid rgb(255, 255, 255, 0.3);
 }
 
-.site-footer .column ul li {
-    list-style: none outside;
+.site-footer .column-container li,
+.site-footer.last-footer p {
+    opacity: 0.3;
 }
+
