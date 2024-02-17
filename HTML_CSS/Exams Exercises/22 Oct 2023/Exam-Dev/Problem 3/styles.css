@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 "PT Sans", serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Serif";
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.site-section {
+    padding: 2em;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #01042F; */
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+
+.site-header nav ul li {
+    list-style: none outside;
+}
+
+.site-header .site-title a,
+.site-header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.site-header .site-title a {
+    display: block;
+    width: 6.5em;
+    height: 5.5em;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url(images/logo.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-section.banner {
+    /* background-color: #01042F; */
+    padding-bottom: 12em;
+}
+
+.site-section.banner .container {
+    color: #fff;
+}
+
+.site-section.banner h2 {
+    font-size: 3.5em;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.site-section.banner p {
+    max-width: 39.5rem;
+    font-size: 1.2em;
+}
+
+.site-section.columns {
+    border-bottom: 2px solid #CCC;
+    background-color: #fff;
+}
+
+.column-container {
+    display: flex;
+    gap: 3em;
+}
+
+.column-container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.column-container .column h2,
+.site-section.sponsors h2,
+.site-section.partners h2 {
+    font-size: 2em;
+}
+
+
+.column-container .column .button {
+    max-width: fit-content;
+    border: 2px solid #B0825C;
+    color: #B0825C;
+    padding: 0.3em 0.7em;
+    text-decoration: none;
+    margin: 0.5em 0 2em 0;
+}
+
+.site-section.sponsors,
+.site-section.partners {
+    background-color: #fff;
+    text-align: center;
+}
+
+.site-section.sponsors h2,
+.site-section.partners h2 {
+    color: #B0825C;
+}
+
+.site-section.sponsors p,
+.site-section.partners p {
+    font-size: 14px;
+    padding: 1em 0;
+    line-height: 1.8;
+}
+
+.sponsors .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+section.avatars {
+    display: flex;
+    justify-content: center;
+    gap: 3.5em;
+}
+
+.avatars .media {
+    overflow: hidden;
+    flex: 0 0 15%;
+    aspect-ratio: 1/1;
+    position: relative;
+    border-radius: 50%;
+    background: #ccc;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+}
+
+.site-footer {
+    background-color: #171720;
+    color: #fff;
+}
+
+.site-footer .column-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-footer .column-container li {
+    text-transform: uppercase;
+    opacity: 0.3;
+}
+
+.site-footer.last-footer{
+    padding: 0.5em;
+    border-top: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.site-footer .column ul li {
+    list-style: none outside;
+}
