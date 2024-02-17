@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 "Agbalumo";
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #fff;
+}
+
+.site {
+    margin: 1em;
+    border: 2px solid black;
+    min-height: 100vh;
+}
+
+.site-section {
+    padding: 2em;
+
+}
+
+.site-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.site-section.site-header .site-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+}
+
+
+.site-header {
+    background-color: #D5EBEA;
+}
+
+.site-header h2,
+.site-header p {
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5;
+    font-size: 1.5em;
+}
+
+.site-header h2 {
+    font-size: 3em;
+}
+
+.site-header p {
+    padding-top: 0.5em;
+}
+
+.site-section.site-main .site-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.main-content.left {
+    flex: 0 0 45%;
+}
+
+.card {
+    padding: 1em;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.card p {
+    font-size: 1.2em;
+    text-indent: 2em;
+    text-align: center;
+    padding: 0.7em;
+}
+
+.main-content.description {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column {
+    flex-grow: 1;
+    padding: 2em;
+}
+
+.column p {
+    font-size: 22px;
+    text-indent: 2em;
+}
+
+.site-section.site-footer {
+    padding: 0;
+}
+
+.site-footer .site-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid rgb(44, 42, 42);
+    margin-top: 0;
+    padding-top: 0;
+
+
+}
+
+.site-footer .footer-title {
+    margin: 0;
+    text-indent: 3em;
+    font-size: 2em;
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    padding-right: 3em;
+}
+
+.site-footer ul {
+
+    padding: 1.5em 0 1em 4.5em;
+    background-color: #D5EBEA;
+}
+
+.site-footer ul li {
+    list-style: none outside;
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.site-footer ul li span {
+    font-weight: bold;
+}
