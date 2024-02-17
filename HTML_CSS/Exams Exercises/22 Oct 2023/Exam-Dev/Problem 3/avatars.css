@@ -1,0 +1,23 @@
+.sponsors {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.sponsors li {
+    list-style: none outside;
+    display: block;
+    width: 5em;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background-color: #eee;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.sponsors li a img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
