@@ -10,6 +10,27 @@ ul {
 
 ul li {
     font-weight: bold;
-    padding-left: 3em;
+    padding-left:3em;
+    margin-bottom: 0.5em;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.brown {
+    background-color: brown;
 }
 

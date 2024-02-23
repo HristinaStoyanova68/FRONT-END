@@ -29,3 +29,14 @@ img {
     height: auto;
     aspect-ratio: 1/1;
 }
+
+.background-green {
+    background-color: green;
+}
+
+p.appear {
+    background-color: beige;
+    color: orange;
+    font-weight: bold;
+    text-transform: initial;
+}
