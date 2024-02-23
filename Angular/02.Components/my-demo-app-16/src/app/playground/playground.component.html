@@ -22,14 +22,17 @@
     <div [class]="greenBackground">Toggle me</div>
 
     <img [attr.src]="imgUrl" />
-</div> -->
+</div> 
+
 
 <!-- <input type="text" placeholder="username" #username>
-<button (click)="handleInput(username.value)">Handle Input</button>
+<button (click)="handleInput(username.value)">Handle Input</button>-->
 
 <!-- second way for getting all: htmlElement  and its value-->
 <input type="text" placeholder="username" #username>
 <button (click)="handleInput(username)">Handle Input</button>
+
+<div [style.background]="colorValue">Test 123 {{colorValue}}</div>
 
 <div [class]="['first', 'second']">Not a ngClass</div>
 <div [ngClass]="['first', 'second']">Test ngClass</div>

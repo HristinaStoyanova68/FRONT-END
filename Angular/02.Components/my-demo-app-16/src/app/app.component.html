@@ -10,7 +10,10 @@
 
 <app-article />
 
-<app-playground />
+<app-playground 
+    color="{{colorValueForPlayground}}" 
+    (onTestOutput)="onOutputFromChild($event)" 
+/>
 
 <!-- 
     Markup:
@@ -22,4 +25,3 @@
         const appRoot = document.getElementById('app-root');
         appRoot.appendChild(div);
  -->
-

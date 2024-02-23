@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 
 
 const IMG_URL = 'https://images.unsplash.com/photo-1708458927308-f798522882a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1M3x8fGVufDB8fHx8fA%3D%3D';
@@ -9,10 +9,10 @@ const IMG_URL = 'https://images.unsplash.com/photo-1708458927308-f798522882a7?w=
     styleUrls: ['./playground.component.css']
 })
 export class PlaygroundComponent implements OnInit, OnDestroy{
-
+    @Input('color') colorValue = 'white';
+    @Output() onTestOutput = new EventEmitter<string>();
     greenBackground = 'background-green';
     isToggle = false;
-
     imgUrl = IMG_URL;
 
     ngOnInit() {
@@ -53,6 +53,8 @@ export class PlaygroundComponent implements OnInit, OnDestroy{
     // second way for getting all :htmlElement and its value
     handleInput(usernameInput: HTMLInputElement) {
         console.log('username: ', usernameInput, usernameInput.value);
+        console.log(this.colorValue);
         
+        this.onTestOutput.emit(usernameInput?.value || '');
     }
 }
