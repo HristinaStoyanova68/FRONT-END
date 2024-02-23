@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 interface User {
     name: string;
     age: number;
-    status: string;
+    status?: string;
 }
 
 @Component({
@@ -22,8 +22,8 @@ export class UserListComponent {
     users = [
         {name: 'Pesho', age: 20, status: 'red'},
         {name: 'Ivan', age: 33, status: 'blue'},
-        {name: 'Petya', age: 34, status: 'orange'},
-        {name: 'Maya', age: 45, status: 'green'},
+        {name: 'Petya', age: 34},
+        {name: 'Maya', age: 45},
         {name: 'Nena', age: 66, status: 'brown'}
     ] as User[];
 

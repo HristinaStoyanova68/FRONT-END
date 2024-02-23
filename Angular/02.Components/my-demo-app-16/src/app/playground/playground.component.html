@@ -1,6 +1,6 @@
 <p>playground works!</p>
 
-<button class="btn-handler" (click)="handleClick()">Click me</button>
+<!-- <button class="btn-handler" (click)="handleClick()">Click me</button>
 
 <p [class.appear]="isToggle">This text-background will appear on click!</p>
 
@@ -22,4 +22,7 @@
     <div [class]="greenBackground">Toggle me</div>
 
     <img [attr.src]="imgUrl" />
-</div>
+</div> -->
+
+<input type="text" placeholder="username" #username>
+<button (click)="handleInput(username.value)">Handle Input</button>

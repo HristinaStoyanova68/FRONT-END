@@ -19,4 +19,9 @@ export class PlaygroundComponent {
         this.isToggle = !this.isToggle;
         console.log(this.isToggle);
     }
+
+    handleInput(usernameValue: string) {
+        console.log('username: ', usernameValue);
+        
+    }
 }

@@ -2,7 +2,7 @@
 
 <ul>
     <li *ngFor="let user of users, index as i">
-        <span [class]="user.status">
+        <span [class]="user?.status">
             Person with name {{ user.name }} is {{ user.age }} years old.
         </span>
 
