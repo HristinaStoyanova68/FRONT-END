@@ -1,0 +1,31 @@
+p {
+    margin: 2em;
+    font-style: oblique;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-handler {
+    margin: 2em;
+    padding: 0.5em 1em;
+    border: 2px solid rgb(104, 100, 100);
+    border-radius: 1em;
+    background-color: #ccc;
+    color: #464550;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.btn-handler:hover {
+    background-color: aquamarine;
+    color: blue;
+    border: 1.5px solid lightseagreen;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1/1;
+}

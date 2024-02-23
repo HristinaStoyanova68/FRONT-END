@@ -11,6 +11,7 @@ type User = {
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent {
+
     users = [
         {name: 'Pesho', age: 20},
         {name: 'Ivan', age: 33},
@@ -18,4 +19,8 @@ export class UserListComponent {
         {name: 'Maya', age: 45},
         {name: 'Nena', age: 66}
     ] as User[];
+
+    
 }
+
+

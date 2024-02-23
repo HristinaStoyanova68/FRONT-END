@@ -2,12 +2,16 @@
 
 <ul>
     <li *ngFor="let user of users, index as i">
-        <span *ngIf="i % 2 === 0">
+        <span>
             Person with name {{ user.name }} is {{ user.age }} years old.
         </span>
 
-        <span *ngIf="i % 2 !== 0" style="color: red;">
+        <!-- <span *ngIf="i % 2 !== 0" style="color: red;">
             Person with name {{ user.name }} is {{ user.age }} years old.
-        </span>
+        </span> -->
     </li>
 </ul>
+
+
+
+

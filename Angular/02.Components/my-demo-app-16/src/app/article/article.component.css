@@ -1,0 +1,12 @@
+h3 {
+    font-size: 40px;
+    color: blue;
+    margin-top: 0;
+}
+
+p {
+    margin: 2em;
+    font-style: oblique;
+    text-transform: uppercase;
+    font-weight: bold;
+}
