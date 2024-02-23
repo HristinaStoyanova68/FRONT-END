@@ -24,5 +24,16 @@
     <img [attr.src]="imgUrl" />
 </div> -->
 
+<!-- <input type="text" placeholder="username" #username>
+<button (click)="handleInput(username.value)">Handle Input</button> -->
+
+<!-- second way for getting all: htmlElement  and its value-->
 <input type="text" placeholder="username" #username>
-<button (click)="handleInput(username.value)">Handle Input</button>
+<button (click)="handleInput(username)">Handle Input</button>
+
+<div [class]="['first', 'second']">Not a ngClass</div>
+<div [ngClass]="['first', 'second']">Test ngClass</div>
+
+<div [attr.data-test123]="'test321'">
+    This is testing of custom data attribute
+</div>

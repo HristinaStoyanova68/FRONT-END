@@ -20,8 +20,15 @@ export class PlaygroundComponent {
         console.log(this.isToggle);
     }
 
-    handleInput(usernameValue: string) {
-        console.log('username: ', usernameValue);
+    //first way : getting just value
+    // handleInput(usernameValue: string) {
+    //     console.log('username: ', usernameValue);
+        
+    // }
+
+    // second way for getting all :htmlElement and its value
+    handleInput(usernameInput: HTMLInputElement) {
+        console.log('username: ', usernameInput, usernameInput.value);
         
     }
 }
