@@ -1,10 +1,11 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { User } from './types/user';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.css'],
+   
 })
 export class AppComponent {
     title = 'my-app-playground';
@@ -15,13 +16,21 @@ export class AppComponent {
         { name: 'Raya', age: 44 }
     ];
 
-    constructor() {
-        setTimeout(() => {
-            this.title = 'Changed from Angular!';
-        }, 3000);
+    addUser(inputName: HTMLInputElement, inputAge: HTMLInputElement) {
+
+        const user: User = {
+            name: inputName.value,
+            age: Number(inputAge.value),
+        }
+
+        // debugger;
+        this.users.push(user);//change can not see in view
+        // this.users = [...this.users, user];//change can see in view
+        // console.log(this.users);
+
+        inputName.value = '';
+        inputAge.value = '';
     }
-
-
     //when we manually change detection
     // constructor(private cd: ChangeDetectorRef) {
     //     setTimeout(() => {
