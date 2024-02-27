@@ -1,11 +1,19 @@
-
-
-export class Article {
-        constructor(title = 'string',
-                description = 'string',
-                author = 'string',
-                imageUrl = 'string') { }
+export interface Article {       
+title: string;
+description: string;
+author: string;
+imageUrl: string;
 }
+
+// export class Article {
+
+//         constructor(
+//                 public title: string,
+//                 public description: string,
+//                 public author: string,
+//                 public imageUrl: string
+//         ) { }
+// }
 
 //constructor(title: string, description: string, author: string, imageUrl: string) {
 //         this.title = title;
