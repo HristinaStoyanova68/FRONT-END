@@ -8,4 +8,5 @@ import { User } from '../types/user';
 })
 export class UserListComponent {
     @Input('users') userListData: User[] = [];
+    // @Input('user') user = {} as User;
 }
