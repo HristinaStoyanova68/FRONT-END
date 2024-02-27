@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
+import { User } from './types/user';
 
 @Component({
     selector: 'app-root',
@@ -7,6 +8,12 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'my-app-playground';
+    users: User[] = [
+        { name: 'Pesho', age: 20 },
+        { name: 'Ivan', age: 22 },
+        { name: 'Mimi', age: 33 },
+        { name: 'Raya', age: 44 }
+    ];
 
     constructor() {
         setTimeout(() => {
