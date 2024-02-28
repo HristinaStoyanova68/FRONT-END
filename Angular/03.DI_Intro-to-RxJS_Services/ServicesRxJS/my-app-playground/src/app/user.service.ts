@@ -1,5 +1,6 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { JsonPlaceholderUser, User } from './types/user';
+import { HttpClient } from '@angular/common/http';
 
 // @Injectable({
 //   providedIn: 'root'
@@ -12,12 +13,17 @@ export class UserService implements OnDestroy{
 
   users: JsonPlaceholderUser[] = [];
 
+  constructor (private http: HttpClient) {
+
+  }
+
 ngOnDestroy(): void {
     //clear terminal, detach from events
 }
 
 getUsers () {
-    return fetch(this.URL).then(res => res.json());
+    // return fetch(this.URL).then(res => res.json());
+    return this.http.get<JsonPlaceholderUser[]>(this.URL);
 }
 
 addUser(inputName: HTMLInputElement, inputEmail: HTMLInputElement) {

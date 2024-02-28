@@ -22,13 +22,23 @@ export class AppComponent implements OnInit{
     }
 
     ngOnInit(): void {
-        this.userService.getUsers().then((users) => {
-            console.log('users: ', users);
-            this.appUsers = users;
-            setTimeout(() => {
-                this.isLoading = false;
-            }, 3000);
-        });
+        // this.userService.getUsers().then((users) => {
+        //     console.log('users: ', users);
+        //     this.appUsers = users;
+        //     setTimeout(() => {
+        //         this.isLoading = false;
+        //     }, 3000);
+        // });
+
+        this.userService.getUsers().subscribe(
+            (users) => {
+                    console.log('users: ', users);
+                    this.appUsers = users;
+                    setTimeout(() => {
+                        this.isLoading = false;
+                    }, 3000);
+                }
+        )
 
     }
 
