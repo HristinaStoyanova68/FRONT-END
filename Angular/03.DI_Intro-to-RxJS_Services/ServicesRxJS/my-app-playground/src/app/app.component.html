@@ -1,13 +1,18 @@
 <h2>{{title}}</h2>
 
-<!-- when use private property: -->
-<app-user-list [users]="appUsers"/>
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="!isLoading">
+    <!-- when use private property: -->
+    <app-user-list [users]="appUsers" />
 
-<!-- when use public property: -->
-<!-- <app-user-list [users]="userService.users"/> -->
+    <!-- when use public property: -->
+    <!-- <app-user-list [users]="userService.users"/> -->
+</div>
+
+
 
 <div>
-    <input type="text" placeholder="name" #inputName/>
-    <input type="text" placeholder="age" #inputAge/>
-    <button (click)="setUsers(inputName, inputAge)">Add user</button>
+    <input type="text" placeholder="name" #inputName />
+    <input type="text" placeholder="email" #inputEmail />
+    <button (click)="setUsers(inputName, inputEmail)">Add user</button>
 </div>

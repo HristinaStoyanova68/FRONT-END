@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { User } from '../types/user';
+import { JsonPlaceholderUser, User } from '../types/user';
 
 @Component({
     selector: 'app-user-list',
@@ -8,7 +8,7 @@ import { User } from '../types/user';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UserListComponent implements OnChanges {
-    @Input('users') userListData: User[] = [];
+    @Input('users') userListData: JsonPlaceholderUser[] = [];
 
     constructor(private cd: ChangeDetectorRef) {}
 

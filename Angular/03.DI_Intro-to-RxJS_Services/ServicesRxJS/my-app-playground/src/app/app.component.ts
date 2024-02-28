@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 // import { User } from './types/user';
 import { UserService } from './user.service';
-import { User } from './types/user';
+import { JsonPlaceholderUser, User } from './types/user';
 
 @Component({
     selector: 'app-root',
@@ -9,14 +9,27 @@ import { User } from './types/user';
     styleUrls: ['./app.component.css'],
    
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
     title = 'my-app-playground';
 
     //when use private property:
-    appUsers: User[] = [];
+    appUsers: JsonPlaceholderUser[] = [];
+
+    isLoading = true;
 
     constructor(private userService: UserService) {
         this.appUsers = this.userService.users;
+    }
+
+    ngOnInit(): void {
+        this.userService.getUsers().then((users) => {
+            console.log('users: ', users);
+            this.appUsers = users;
+            setTimeout(() => {
+                this.isLoading = false;
+            }, 3000);
+        });
+
     }
 
     setUsers(inputName: HTMLInputElement, inputAge: HTMLInputElement) {
