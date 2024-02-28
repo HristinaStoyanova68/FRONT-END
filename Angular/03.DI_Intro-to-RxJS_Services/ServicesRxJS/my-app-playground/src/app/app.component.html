@@ -1,9 +1,13 @@
 <h2>{{title}}</h2>
 
-<app-user-list [users]="users"/>
+<!-- when use private property: -->
+<app-user-list [users]="appUsers"/>
+
+<!-- when use public property: -->
+<!-- <app-user-list [users]="userService.users"/> -->
 
 <div>
     <input type="text" placeholder="name" #inputName/>
     <input type="text" placeholder="age" #inputAge/>
-    <button (click)="addUser(inputName, inputAge)">Add user</button>
+    <button (click)="setUsers(inputName, inputAge)">Add user</button>
 </div>
