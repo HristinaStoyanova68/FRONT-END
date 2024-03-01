@@ -9,15 +9,23 @@ import { Post } from '../types/post';
 })
 export class PostsListComponent implements OnInit {
     postList: Post[] = [];
+    isLoading: boolean = true;
     constructor(private apiService: ApiService) {
 
     }
 
     ngOnInit(): void {
-        this.apiService.getPosts(5).subscribe((posts) => {
-            console.log(posts[0]);
-
-            this.postList = posts;
+        this.apiService.getPosts(5).subscribe({
+            next: (posts) => {
+                // console.log(themes[0]);
+    
+                this.postList = posts;
+                this.isLoading = false;
+            },
+            error: (err) => {
+                this.isLoading = false;
+                console.error(`Error: ${err}`);
+            },
         });
     }
 }
