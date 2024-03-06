@@ -1,4 +1,20 @@
-<div class="btn" (click)="fetchUsers()" [class.disabled]="isLoading">
+<div>
+    user-list-works
+</div>
+
+<!-- example with button:
+    <div class="btn" (click)="fetchUsers()" [class.disabled]="isLoading">
     <p *ngIf="!isLoading">Reload Users</p>
     <app-spinner *ngIf="isLoading"/>
 </div>
+ -->
+
+ <!-- example with initialization(OnInit): -->
+    <div>
+        <ul>
+            <li *ngFor="let user of users">
+            {{user.id}} - {{user.username}}
+            </li>
+        </ul>
+    </div>
+
