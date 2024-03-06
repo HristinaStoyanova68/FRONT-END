@@ -16,3 +16,8 @@
     cursor: pointer;
 }
 
+.disabled {
+    background-color: beige;
+    pointer-events: none;
+}
+

@@ -1,4 +1,4 @@
-<div class="btn">
-    <p>Reload Users</p>
-    <!-- <app-spinner /> -->
+<div class="btn" (click)="fetchUsers()" [class.disabled]="isLoading">
+    <p *ngIf="!isLoading">Reload Users</p>
+    <app-spinner *ngIf="isLoading"/>
 </div>
