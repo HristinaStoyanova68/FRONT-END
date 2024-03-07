@@ -4,13 +4,25 @@ import { UserListComponent } from './user/user-list/user-list.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 
 const routes: Routes = [
-  {path: '', component: TodoListComponent},
-  {path: 'user-list', component: UserListComponent},
-  {path: 'todo-list', component: TodoListComponent},
+  //   {path: '', component: TodoListComponent},
+  //   {path: '', pathMatch: 'full', component: TodoListComponent},
+  { path: '', pathMatch: 'full', redirectTo: 'user-list' },
+  {
+    path: 'user-list',
+    component: UserListComponent,
+  },
+  {
+    path: 'todo-list',
+    component: TodoListComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'error-page',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
