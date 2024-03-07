@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
+import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 const routes: Routes = [
   //   {path: '', component: TodoListComponent},
@@ -15,10 +16,14 @@ const routes: Routes = [
     path: 'todo-list',
     component: TodoListComponent,
   },
-  {
-    path: '**',
-    redirectTo: 'error-page',
-  },
+//   {
+//     path: 'error-page',
+//     component: ErrorPageComponent,
+//   },
+//   {
+//     path: '**',
+//     redirectTo: 'error-page',
+//   },
 ];
 
 @NgModule({
