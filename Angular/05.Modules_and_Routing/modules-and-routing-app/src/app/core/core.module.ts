@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GlobalLoaderComponent } from './global-loader/global-loader.component';
 import { SharedModule } from '../shared/shared.module';
 import { NavComponent } from './nav/nav.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,10 +13,10 @@ import { NavComponent } from './nav/nav.component';
     NavComponent
   ],
   imports: [
-    CommonModule, SharedModule,
+    CommonModule, SharedModule,RouterModule,
   ], 
   exports: [
-    GlobalLoaderComponent
+    GlobalLoaderComponent, NavComponent,
   ]
 })
 export class CoreModule { }

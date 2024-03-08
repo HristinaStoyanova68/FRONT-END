@@ -1,0 +1,21 @@
+.nav-btn {
+    padding: 0.5em 1.5em;
+    margin: 1em;
+    border: 2px solid blue;
+    border-radius: 0.5em;
+    background-color: aqua;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.nav-btn:hover {
+    background-color: rgb(188, 136, 237);
+    color: #fff;
+    border: 2px solid rgb(193, 17, 221);
+    cursor: pointer;
+}
+
+/* .disabled {
+    background-color: beige;
+    pointer-events: none;
+} */
