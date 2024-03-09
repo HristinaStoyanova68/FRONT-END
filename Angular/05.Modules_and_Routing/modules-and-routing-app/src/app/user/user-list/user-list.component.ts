@@ -8,17 +8,31 @@ import { GlobalLoaderService } from 'src/app/core/global-loader/global-loader.se
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.css'],
 })
+
 export class UserListComponent implements OnInit, OnDestroy{
     isLoading: boolean = false;
     users: User[] = [];
+    interval: any;
+    counter: number = 0;
 
     constructor(private userService: UserService,
                 private globalLoaderService: GlobalLoaderService) {}
-    ngOnDestroy(): void {
-        console.log('On Destroy invoked!');
-    }
+    
     ngOnInit(): void {
         this.fetchUsers();
+
+        this.interval = setInterval(() => {
+            this.counter += 1;
+            console.log(this.counter);
+            
+        }, 2000)
+    }
+
+    //to clear data!!!
+    ngOnDestroy(): void {
+        console.log('On Destroy invoked!');
+
+        clearInterval(this.interval);
     }
 
     fetchUsers() {

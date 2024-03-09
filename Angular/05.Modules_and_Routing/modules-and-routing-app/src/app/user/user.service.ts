@@ -7,14 +7,18 @@ import { User } from '../types/user';
   providedIn: 'root'
 })
 export class UserService {
-  
-  constructor(private http: HttpClient) { }
+  private apiUrl: string;
+
+  constructor(private http: HttpClient) { 
+    this.apiUrl = environment.apiUrl;
+  }
 
 
   getUsers () {
+      return this.http.get<User[]>(this.apiUrl);
+  };
 
-      const {apiUrl} = environment;
-
-      return this.http.get<User[]>(apiUrl);
+  getSingleUser(id: string) {
+    return this.http.get<User>(`${this.apiUrl}/${id}`)
   }
 }
