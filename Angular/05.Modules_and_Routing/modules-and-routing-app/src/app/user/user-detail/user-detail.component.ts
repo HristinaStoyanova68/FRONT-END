@@ -16,13 +16,13 @@ ngOnInit(): void {
 
     this.activatedRoute.params.subscribe((value) => {
         const id = value['id'];
-
-        console.log(this.activatedRoute.snapshot.data['user']);
-        
-
         this.userService.getSingleUser(id).subscribe((user) => {
             console.log(user);
         })
     })
+
+    //second way:
+    // console.log(this.activatedRoute.snapshot.data['user']);
+    
 }
 }

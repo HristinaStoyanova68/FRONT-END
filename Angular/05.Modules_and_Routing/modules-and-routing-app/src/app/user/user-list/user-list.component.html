@@ -12,7 +12,11 @@
  <!-- example with initialization(OnInit): -->
     <div>
         <ul>
-            <li *ngFor="let user of users">
+            <li *ngFor="let user of users" class="item"
+            
+            [routerLink]="['/user', 'detail', user.id]"
+            
+            >
             {{user.id}} - {{user.username}}
             </li>
         </ul>

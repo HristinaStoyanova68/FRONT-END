@@ -21,3 +21,14 @@
     pointer-events: none;
 }
 
+.item {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.item:hover {
+    background-color: antiquewhite;
+    color: red;
+    cursor: pointer;
+}
+
