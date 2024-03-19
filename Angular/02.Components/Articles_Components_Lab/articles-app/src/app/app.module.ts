@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterOnlyLayoutComponent } from './footer-only-layout/footer-only-layout.component';
-import { UserModule } from './user/user.module';
+import { ArticleComponent } from './article/article.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterOnlyLayoutComponent,
+    ArticleComponent,
+    ArticlesComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    UserModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
