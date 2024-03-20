@@ -18,6 +18,19 @@ export class ThemesListComponent implements OnInit {
         return this.userService.isLogged;
     }
 
+    get userId(): string {
+        return this.userService.user?.id || '';
+    }
+
+    isSubscribed(theme: Theme) {
+        const isSubscribedUser = theme.subscribers.find((subscriber) => subscriber === this.userId)
+
+        
+        console.log({isSubscribedUser: !!isSubscribedUser});
+        
+        return !!isSubscribedUser;
+    }
+
     ngOnInit(): void {
 
         this.api.getThemes().subscribe((themes) => {
