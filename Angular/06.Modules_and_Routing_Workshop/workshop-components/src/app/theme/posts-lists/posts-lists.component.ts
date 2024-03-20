@@ -32,7 +32,6 @@ export class PostsListsComponent implements OnInit {
         //default way:
         this.api.getPosts(5).subscribe({
             next: (posts) => {
-                console.log(posts);
 
             this.posts = posts;
 
