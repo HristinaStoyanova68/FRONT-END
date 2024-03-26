@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     LoginComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   imports: [
     CommonModule, UserRoutingModule, RouterModule,

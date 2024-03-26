@@ -23,7 +23,7 @@ export class ThemesListComponent implements OnInit {
     }
 
     isSubscribed(theme: Theme) {
-        const isSubscribedUser = theme.subscribers.find((subscriber) => subscriber === this.userId)
+        const isSubscribedUser = theme.subscribers?.find((subscriber) => subscriber === this.userId)
 
         return !!isSubscribedUser;
     }

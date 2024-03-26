@@ -2,7 +2,7 @@ import { Theme } from "./theme";
 import { User } from "./user"
 
 export interface Post {
-    likes: string[];
+    likes: string[] | null;
     _id: string;
     text: string;
     userId: User;

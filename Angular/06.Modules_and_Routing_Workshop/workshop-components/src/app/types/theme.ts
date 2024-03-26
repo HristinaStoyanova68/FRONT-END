@@ -2,7 +2,7 @@ import { Post } from "./post";
 import { User } from "./user";
 
 export interface Theme {
-    subscribers: string[];
+    subscribers: string[] | null;
     posts: Post[];
     _id: string;
     themeName: string;
