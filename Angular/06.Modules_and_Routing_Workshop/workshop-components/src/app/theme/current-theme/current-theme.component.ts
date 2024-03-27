@@ -13,11 +13,11 @@ export class CurrentThemeComponent implements OnInit {
 
   constructor(
     private apiService: ApiService,
-    private ativatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    this.ativatedRoute.params.subscribe((data) => {
+    this.activatedRoute.params.subscribe((data) => {
       const id = data['themeId'];
 
       this.apiService.getTheme(id).subscribe((theme) => {
