@@ -1,0 +1,58 @@
+<h1>home works!</h1>
+
+<hr />
+<h2 appHighlight>I am here</h2>
+<p appHighlight>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+<hr />
+<div appMyRouterLink="/login">Go to login page</div>
+<div appMyRouterLink="/register">Go to register page</div>
+
+<hr />
+<div *ngIf="true">
+    <div>Simple example 1.1</div>
+    <div>Simple example 1.2</div>
+    <div>Simple example 1.3</div>
+</div>
+
+<ng-template [ngIf]="true">
+    <div>Simple example 2.1</div>
+    <div>Simple example 2.2</div>
+    <div>Simple example 2.3</div>
+</ng-template>
+
+<hr />
+
+<button (click)="toggle()">Toggle</button>
+
+<!-- Custom Directives -->
+<!-- Usage 1 -->
+<div *appMyStructural="isShown">Structural Directives - Usage 1</div>
+
+<!-- Usage 2 -->
+<ng-template [appMyStructural]="isShown"
+
+    let-testMe="myCustomValue"
+    let-myNumber="myNum"
+    #directiveRef="appMyStructural"
+>
+    <div>Structural Directives - Usage 2</div>
+
+    <div>myCustomValue: {{testMe}}</div>
+    <div>myNum: {{myNumber}}</div>
+</ng-template>
+
+<button (click)="simpleClick(directiveRef)">Simple click</button>
+
+<hr />
+
+<!-- Usage 3 -->
+<ng-template #tmp>
+    <div>Structural Directives - Usage 3</div>
+</ng-template>
+
+<ng-container [appMyStructural]="isShown" [myTmpRef]="tmp" />
+
+
+
