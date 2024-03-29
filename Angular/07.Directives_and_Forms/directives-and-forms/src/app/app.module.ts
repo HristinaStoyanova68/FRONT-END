@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { MyRouterLinkDirective } from './my-router-link.directive';
 import { MyStructuralDirective } from './my-structural.directive';
 import { FormsModule } from '@angular/forms';
+import { MaxCountDirective } from './max-count.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     HomeComponent,
     MyRouterLinkDirective,
-    MyStructuralDirective
+    MyStructuralDirective,
+    MaxCountDirective
   ],
   imports: [
     BrowserModule,
