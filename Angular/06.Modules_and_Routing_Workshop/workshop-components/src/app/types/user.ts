@@ -12,9 +12,10 @@ export interface User {
 }
 
 export interface UserForAuth {
-    firstName: string;
-    email: string;
-    phoneNumber: string;
-    password: string;
     id: string;
+    username: string;
+    email: string;
+    tel: string;
+    password: string;
+    rePassword: string;
 }
