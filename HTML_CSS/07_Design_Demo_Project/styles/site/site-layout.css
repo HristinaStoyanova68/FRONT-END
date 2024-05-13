@@ -1,0 +1,215 @@
+body {
+    /* border: 2px solid #e80b0b; */
+    /* padding: 0.5em; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1ced1;
+}
+
+/* @media (min-width: 800px) {
+    .site {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+} */
+
+/* @media (max-width: 920px) {
+    .site {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+} */
+
+.site {
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-header,
+.site-footer {
+    min-width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer {
+    justify-content: center;
+    padding: 1em 2em;
+}
+
+.footer,
+.header {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    /* border: 2px solid #000; */
+}
+
+.header {
+    min-width: 80%;
+}
+
+/* 
+.card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    } */
+
+.site-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(143, 4, 143);
+}
+
+.site-branding p {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.hr-short {
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background-color: #000;
+    width: 50px;
+    border: none;
+}
+
+.sign-up-to-newsletter .sign-up-title .hr-short {
+    height: 3.5px;
+}
+
+.site-main {
+    margin-top: 2em;
+}
+
+.site-main,
+.site-main .sign-up-to-newsletter {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-top: 2px solid grey; */
+}
+
+.site-main .sign-up-to-newsletter {
+    background-color: #833d82;
+    /* border: 2px solid green; */
+    color: #fff;
+    min-width: 100%;
+    padding: 2em;
+}
+
+.site-main .sign-up-to-newsletter .sign-up-title {
+    margin-top: 0;
+}
+
+.site-main .sign-up-to-newsletter .sign-up-title h2 {
+    margin-top: 0;
+}
+
+.site-main>.website,
+.site-main>.our-team,
+.site-main>.testimonials {
+    max-width: 80%;
+    /* border: 2px solid yellow; */
+}
+
+.site-main>.our-team,
+.site-main>.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.site-main>.our-team>.cards,
+.site-main>.testimonials>.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.sign-up-to-newsletter,
+.site-footer {
+    /* background-color: #f4f4f4; */
+    /* padding: 20px; */
+    box-shadow: 0px -7px 7px -5px rgba(0, 0, 0, 0.75);
+    position: relative;
+    z-index: 1;
+}
+
+.site-footer section {
+    /* border: 2px solid rgb(92, 54, 54); */
+    width: 33%;
+    box-sizing: border-box;
+    max-height: 200px;
+
+}
+
+.site-footer .sitemap {
+    /* border: 2px solid rgb(92, 54, 54); */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+
+    max-height: 200px;
+    /* overflow-y: auto; */
+}
+
+.sitemap .sitemap-title {
+    /* border: 2px solid red; */
+    max-width: 100%;
+    /* padding-left: 1em; */
+    margin-bottom: 0;
+}
+
+.sitemap .sitemap-content {
+    flex-grow: 1;
+}
+
+.site-footer .sitemap ul {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+}
+
+.site-footer .contact-info-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
