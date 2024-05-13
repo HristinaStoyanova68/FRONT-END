@@ -19,6 +19,14 @@ html {
 }
 
 /*
+ * Animate scroll movement
+ * - - - - - - - - - - - */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*
  * Fix images behaviour - block elements
  * - - - - - - - - - - - */
 img {
