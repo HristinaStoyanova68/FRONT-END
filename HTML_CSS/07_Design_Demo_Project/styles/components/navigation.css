@@ -27,9 +27,25 @@
     display: block;
     padding: 0.8em 1em;
     text-decoration: none;
+    position: relative;
 }
 
 .main-nav li a::before {
     display: inline-block;
     content: "_";
+}
+
+.main-nav li.selected a{
+    color: #fff;
+}
+
+.main-nav li.selected a::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #FEA55F;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
 }
