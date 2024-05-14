@@ -2,8 +2,8 @@
 body {
     /* border: 2px solid #e80b0b; */
     padding: 2em;
-    background-color: #b6cbdd;
     /* background-color: #b6cbdd; */
+    background-color: var(--clr-body-bgrd);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,8 +13,8 @@ body {
 
 .site {
     color: #fff;
-    background-color: #011627;
-    border: 1px solid #1E2D3D;
+    background-color: var(--clr-site-bgrd);
+    border: 1px solid var(--clr-border-layout);
     max-width: 1200px;
     width: 100%;
 }

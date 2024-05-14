@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid #fff;
-    /* border: 1px solid #1E2D3D; */
+    border: 1px solid var(--clr-border-layout);
 }
 
 .site-header .site-title {
