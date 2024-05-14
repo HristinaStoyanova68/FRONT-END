@@ -30,6 +30,11 @@
     position: relative;
 }
 
+.main-nav li a:focus,
+.main-nav li a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
 .main-nav li a::before {
     display: inline-block;
     content: "_";
@@ -48,4 +53,9 @@
     position: absolute;
     top: calc(100% - 1px);
     left: 0;
+}
+
+.main-nav li a:active {
+    background-color: #fff;
+    color: #000;
 }
