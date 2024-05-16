@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--clr-border-layout);
+    position: relative;
+    z-index: 10;
 }
 
 .site-header .site-title {
@@ -11,6 +13,7 @@
 }
 
 .site-header .site-title a {
+    display: block;
     text-decoration: none;
     padding: 0.8em 1em;
     padding-right: 5em;
