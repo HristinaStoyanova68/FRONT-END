@@ -1,6 +1,6 @@
 :root {
-    --clr-body-bgrd: #243849;
-    --clr-site-bgrd: #011627;
+    --clr-body-bgrd: rgb(1, 12, 21);
+    --clr-site-bgrd: rgb(1, 22, 39);
     /* --clr-site-bgrd: #fff; */
     --clr-border-layout: #1E2D3D;
     /* --clr-border-layout: red; */
