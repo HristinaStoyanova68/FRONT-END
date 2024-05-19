@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Stuff about me
 permalink: /about/
 ---
 
@@ -17,4 +17,6 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll -->
 
-hello all
+Hello there
+
+Here is another paragraph.
