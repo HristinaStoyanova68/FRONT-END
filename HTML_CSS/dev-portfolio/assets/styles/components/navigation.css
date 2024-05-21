@@ -28,7 +28,10 @@
     padding: 0.8em 1em;
     text-decoration: none;
     position: relative;
+    text-transform: lowercase;
 }
+
+
 
 .main-nav li a:focus,
 .main-nav li a:hover {
