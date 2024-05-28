@@ -21,14 +21,16 @@
                     <h1>{{page.title}}</h1>
                 </header>
 
-                <!-- <p class="text-hide"> -->
-                        {{ content }}
-                <!-- </p> -->
+                <div {% if page.title == "About" %}class="text-hide"{% endif %}>
+                    {{ content }}
+                </div>
             </article>
             
         </main>
 
-        {% include footer.html %}
+        {% unless page.title == "Ways to get in touch" %}
+            {% include footer.html %}
+        {% endunless %}
 
     </div>
 
