@@ -54,3 +54,32 @@
 .presentation .clr-variable-value {
     color: #E99287;
 }
+
+.content p {
+    padding-bottom: 0.5em;
+}
+
+.content .list {
+    padding: 0.5em;
+
+}
+
+.content .list li {
+    list-style: none outside;
+}
+
+.content .list li a {
+    text-decoration: none;
+}
+
+.content .list li a:hover {
+    text-decoration: underline;
+}
+
+.site-footer p
+{
+    /* background-color: yellow; */
+    margin: 0 2.3em;
+/* padding: 1em; */
+    padding: 0.8em 1.5em;
+}
