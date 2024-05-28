@@ -1,10 +1,10 @@
 .site-footer {
     border-top: 1px solid var(--clr-border-layout);
+    border-bottom: 1px solid var(--clr-border-layout);
     display: flex;
     align-items: center;
     position: relative;
     z-index: 10;
-    border-bottom: 1px solid var(--clr-border-layout);
   }
 
 .site-footer .socials {
@@ -29,7 +29,7 @@
     padding-bottom: 0;
 }
 
-.site-footer p,
+/* .site-footer p,
 .site-footer li {
     padding: 0.8em 1.5em;
-}
+} */
