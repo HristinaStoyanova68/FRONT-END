@@ -4,6 +4,4 @@ title: Stuff about me
 permalink: /about/
 ---
 
-Hello there
-
-Here is another paragraph.
+{% include about.html %}
