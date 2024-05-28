@@ -76,10 +76,7 @@
     text-decoration: underline;
 }
 
-.site-footer p
-{
-    /* background-color: yellow; */
+.site-footer p {
     margin: 0 2.3em;
-/* padding: 1em; */
     padding: 0.8em 1.5em;
 }
