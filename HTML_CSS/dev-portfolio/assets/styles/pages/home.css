@@ -76,7 +76,11 @@
     text-decoration: underline;
 }
 
+.site-footer p,
+.site-footer li {
+    padding: 0.8em 1em;
+}
+
 .site-footer p {
-    margin: 0 2.3em;
-    padding: 0.8em 1.5em;
+    margin-left: 2.5em;
 }
