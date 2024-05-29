@@ -2,10 +2,6 @@
     padding: 2em;
 }
 
-.page p {
-    padding: 0;
-}
-
 .page p.text-hide {
     margin-top: 2em;
     width: 30em;
@@ -13,12 +9,9 @@
     white-space: nowrap;
     text-overflow: ellipsis; */
     position: relative;
-  /* background-color: yellow; */
-
 }
 
 .page p.text-hide::after {
-  /* background-color: yellow; */
     display: block;
     content: '';
     height: 9em;
